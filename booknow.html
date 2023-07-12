@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"  href="booknow.css">
+    <title>Flight Ticket Booking</title>
+    <style>
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Ticket Booking</h1>
+    <form action="booking.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="flight">Flight:</label>
+        <select id="flight" name="flight">
+            <option value="FL078">IndiGo - FL078</option>
+            <option value="FL032">Air India Express - FL032</option>
+            <option value="FL058">SpiceJet - FL058</option>
+            <option value="FL895">Vistara - FL895</option>
+            <option value="FL325">Go Air- FL325</option>
+            <option value="FL098">Emirates - FL098</option>
+            <option value="FL789">Originar - FL785</option>
+            <option value="FL068">Aliance Air - FL068</option>
+            <option value="FL067">Saudia - FL067</option>
+            <!-- Add more flight options here -->
+        </select><br><br>
+
+        <label for="passengers">Passengers:</label>
+        <input type="number" id="passengers" name="passengers" required><br><br>
+        <label for="seat-count">Number of Seats:</label>
+        <input type="number" id="seat-count" name="seat-count" min="1" max="60" required>
+
+        <button type="Submit">  <a href="my booking.html">Book Now</a></button>
+    </form>
+</body>
+</html>``
